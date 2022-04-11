@@ -451,6 +451,17 @@ public final class AES
     {
         public PBEWithSHA256And256BitAESBC()
         {
+            /**
+             * public PBESecretKeyFactory(
+                    String algorithm,
+                    ASN1ObjectIdentifier oid,
+                    boolean forCipher,
+                    int scheme,
+                    int digest,
+                    int keySize,
+                    int ivSize)
+                {
+             */
             super("PBEWithSHA256And256BitAES-CBC-BC", null, true, PKCS12, SHA256, 256, 128);
         }
     }
